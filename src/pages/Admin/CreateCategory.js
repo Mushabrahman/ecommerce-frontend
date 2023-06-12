@@ -17,7 +17,7 @@ const CreateCategory = () => {
     // e.preventDefault();
 
     try {
-      const { data } = await axios.post("/api/v1/category/create-category", {
+      const { data } = await axios.post("https://ecommerce2-hhbr.onrender.com/api/v1/category/create-category", {
         name,
       });
       if (data?.success) {
